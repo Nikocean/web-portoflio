@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 text-slate-300">
         <p>
           I am a Frontend Engineer with 2+ years of professional experience
           building and maintaining scalable web applications, primarily using

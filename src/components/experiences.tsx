@@ -51,16 +51,16 @@ export default function Experiences() {
       <div className="space-y-8">
         {experiences.map((exp, index) => (
           <div key={index} className="group relative pl-8">
-            <div className="absolute left-0 top-1 h-4 w-4 rounded-full bg-gray-300 group-hover:bg-blue-500"></div>
-            <div className="absolute left-[7px] top-5 h-full w-[2px] bg-gray-200 group-hover:bg-blue-300"></div>
+            <div className="absolute left-0 top-1 h-4 w-4 rounded-full bg-slate-300 group-hover:bg-sky-500"></div>
+            <div className="absolute left-[7px] top-5 h-full w-[2px] bg-slate-200 group-hover:bg-sky-300"></div>
 
             <div className="space-y-2">
-              <h3 className="text-lg font-semibold">
+              <h3 className="text-lg font-semibold text-slate-300">
                 {exp.role} • {exp.company}
               </h3>
-              <p className="text-sm text-gray-600">{exp.period}</p>
+              <p className="text-sm font-bold text-slate-300">{exp.period}</p>
 
-              <ul className="list-disc pl-5 space-y-1 text-gray-700">
+              <ul className="list-disc pl-5 space-y-1 text-slate-400">
                 {exp.description.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
@@ -70,7 +70,7 @@ export default function Experiences() {
                 {exp.skills.map((skill, i) => (
                   <span
                     key={i}
-                    className="px-2 py-1 text-xs rounded bg-gray-100 text-gray-800"
+                    className="px-2 py-1 text-xs rounded bg-slate-100 text-slate-800"
                   >
                     {skill}
                   </span>
@@ -84,12 +84,12 @@ export default function Experiences() {
         href="/documents/CV-Niko-ATS.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-lg font-semibold mt-2 hover:text-blue-600 transition-colors duration-200"
+        className="text-lg font-semibold mt-2 text-slate-400 hover:text-sky-600 transition-colors duration-200"
       >
         View Full Résumé
         <FontAwesomeIcon
           icon={faArrowRightToFile}
-          className="w-3 h-3 inline-block ml-2 hover:text-blue-600 transition-colors duration-200"
+          className="w-3 h-3 inline-block ml-2 hover:text-sky-600 transition-colors duration-200"
         />
       </Link>
     </section>

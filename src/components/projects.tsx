@@ -24,23 +24,18 @@ export default function Projects() {
 
   return (
     <section className="space-y-8">
-      {/* <h2 className="text-2xl font-bold flex items-center">
-        <FontAwesomeIcon icon={faBriefcase} className="w-5 h-5 mr-2" />
-        Projects
-      </h2> */}
-      
       <div className="space-y-8">
         {projects.map((project, index) => (
           <div key={index} className="group relative pl-8">
-            <div className="absolute left-0 top-1 h-4 w-4 rounded-full bg-gray-300 group-hover:bg-blue-500"></div>
-            <div className="absolute left-[7px] top-5 h-full w-[2px] bg-gray-200 group-hover:bg-blue-300"></div>
+            <div className="absolute left-0 top-1 h-4 w-4 rounded-full bg-slate-300 group-hover:bg-sky-500"></div>
+            <div className="absolute left-[7px] top-5 h-full w-[2px] bg-slate-200 group-hover:bg-sky-300"></div>
             
             <div className="space-y-2">
               <a
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-lg font-semibold hover:text-blue-600 transition-colors duration-200"
+                className="text-lg font-semibold hover:text-sky-600 transition-colors duration-200 text-slate-300"
               >
                 {project.company}
                 <FontAwesomeIcon 
@@ -48,9 +43,9 @@ export default function Projects() {
                   className="w-3 h-3 inline-block ml-1" 
                 />
               </a>
-              <p className="text-sm text-gray-600">{project.period}</p>
+              <p className="text-sm font-bold text-slate-300">{project.period}</p>
 
-              <ul className="list-disc pl-5 space-y-1 text-gray-700">
+              <ul className="list-disc pl-5 space-y-1 text-slate-400">
                 {project.description.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
@@ -60,7 +55,7 @@ export default function Projects() {
                 {project.skills.map((skill, i) => (
                   <span 
                     key={i} 
-                    className="px-2 py-1 text-xs rounded bg-gray-100 text-gray-800"
+                    className="px-2 py-1 text-xs rounded bg-slate-100 text-slate-800"
                   >
                     {skill}
                   </span>

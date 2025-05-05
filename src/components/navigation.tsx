@@ -44,8 +44,8 @@ export default function Navigation() {
         href="#about" 
         className={`transition-colors duration-200 ${
           activeSection === 'about' 
-            ? 'text-blue-600 font-medium' 
-            : 'text-gray-600 hover:text-gray-900'
+            ? 'text-sky-400 font-medium' 
+            : 'text-slate-400 hover:text-slate-700'
         }`}
       >
         About
@@ -54,8 +54,8 @@ export default function Navigation() {
         href="#experiences" 
         className={`transition-colors duration-200 ${
           activeSection === 'experiences' 
-            ? 'text-blue-600 font-medium' 
-            : 'text-gray-600 hover:text-gray-900'
+            ? 'text-sky-400 font-medium' 
+            : 'text-slate-400 hover:text-slate-700'
         }`}
       >
         Experiences
@@ -64,8 +64,8 @@ export default function Navigation() {
         href="#projects" 
         className={`transition-colors duration-200 ${
           activeSection === 'projects' 
-            ? 'text-blue-600 font-medium' 
-            : 'text-gray-600 hover:text-gray-900'
+            ? 'text-sky-400 font-medium' 
+            : 'text-slate-400 hover:text-slate-700'
         }`}
       >
         Projects
